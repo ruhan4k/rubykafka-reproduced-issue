@@ -1,6 +1,6 @@
 ## Introduction
 
-This is based on (rubykafka-reproduced-issue)[https://github.com/kamilsdz/rubykafka-reproduced-issue] repo but with a new solution for that.
+This is based on [rubykafka-reproduced-issue](https://github.com/kamilsdz/rubykafka-reproduced-issue) repo but with a new solution for that.
 
 As we can't change the size of the Kafka topic message, I came up with a different solution:
 
