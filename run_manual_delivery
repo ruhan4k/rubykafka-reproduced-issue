@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require_relative "boot_manual_delivery"
+
+sender = Sender.new
+iteration = 0
+
+loop do 
+  puts "Creating new messages.."
+  # Putting 50 messages on the queue
+  50.times do
+    sender.perform(iteration += 1)
+  end
+  puts "All enqueued!"
+
+  # Waiting for the messages to be delivered and
+  # showing the size of the queue
+  10.times do
+    puts "Ruby-Kafka queue size: #{$kafka_producer.instance_variable_get(:@queue).size}"
+    sleep(0.2)
+  end
+  puts "Starting again"
+end
+
+at_exit { $kafka_producer.shutdown }
