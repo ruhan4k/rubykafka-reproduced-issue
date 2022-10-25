@@ -33,4 +33,5 @@ When running the `automatic` one, after about 45 seconds the error will be gener
 
 ## References
 
-Read more [here](https://www.waveinit.com/Ruby-Kafka-Buffer-Overflow-Issue/)
+1. Read more about the problem it solves [here](https://www.waveinit.com/Ruby-Kafka-Buffer-Overflow-Issue/)
+2. See a video showing the solution [here](https://drive.google.com/drive/folders/1MeJxIM-MsuclY4e5UWfprUC2YpZew3_7)
