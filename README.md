@@ -11,6 +11,8 @@ I then create two modes of execution that will who you how that can improve the 
 1. automatic_delivery
 2. manual_delivery
 
+The main thing about `manual_delivery` is that it doesn't use `delivery_interval` and `delivery_threshould` parameters, otherwise, it controls the batches by itself. All the details about how simply it can be implemented can be seen [here](https://github.com/ruhan4k/rubykafka-reproduced-issue/blob/master/workers/sender_manual_delivery.rb#L1-L44).
+
 ## How to run:
 
 First run `docker-compose up`
